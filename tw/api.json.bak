@@ -17,7 +17,7 @@
   "sites": [
     {
       "key": "豆瓣",
-      "name": "公众号：天微科技 提示：自用测试严禁传播购买（250101更新）",
+      "name": "公众号：天微科技 提示：自用测试禁传播购买(250101包）",
       "type": 3,
       "api": "csp_Douban",
       "searchable": 0,
@@ -61,6 +61,19 @@
       },
       "timeout": 10
     },
+    
+    
+    {
+            "key": "央视",
+            "name": "《央视🔹大全》",
+            "type": 3,
+            "api": "./py/py_1712024cntv.py",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
+        },
     {
       "key": "🌞腾腾4K解析_js",
       "name": "《免扫🔹腾4K》",
@@ -94,6 +107,9 @@
       "order_num": 0,
       "ext": "./lib/皮皮虾4K.js"
     },
+    
+    
+      
     {
       "key": "木偶网盘",
       "name": "《木偶🔹UC4K》",
@@ -152,6 +168,17 @@
         }
       }
     },
+    
+    
+    {
+            "key": "策驰影院",
+            "name": "《天微🔹秒播》",
+            "type": 3,
+            "api": "./py/策驰影院.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
     {
       "key": "csp_JPYY",
       "name": "《金牌🔹秒播》",
@@ -206,6 +233,25 @@
       },
       "timeout": 10
     },
+    
+    {
+            "key": "py猎手",
+            "name": "《猎手🔹秒播》",
+            "type": 3,
+            "api": "./py/py_电影猎手.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+     {
+            "key": "映播.py",
+            "name": "《映播🔹秒播》",
+            "type": 3,
+            "api": "./py/映播.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
     {
       "key": "嫖嫖嫖",
       "name": "《嫖嫖🔹秒播》",
@@ -465,31 +511,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "jar": "./lib/0819.jar;md5;380A08E7735A86D85AAA24E9A1C77AF3"
-    },
-    {
-      "key": "✨YY影视✨",
-      "name": "《天微🔹秒播》",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
-        "主页url": "https://uuys.cc",
-        "二次截取": "module-page&&<div id=\"page\">",
-        "数组": "<a&&</div></div>",
-        "图片": "data-original=\"&&\"",
-        "标题": "title=\"&&\"",
-        "链接": "href=\"&&\"",
-        "副标题": "天微专享✨+module-item-note&&</div>",
-        "线路数组": "item tab-item&&</div>[排序:海湾资源>非凡播放>无尽资源]",
-        "线路标题": "天微✨+<span>&&</span>+【共+<small>&&</small>+集】",
-        "播放数组": "module-play-list\"&&</div>",
-        "播放标题": "天微✨+>&&</",
-        "简介": "【公众号：天微科技】提醒：请勿相信视频里的广告！+<p>&&</p >",
-        "搜索url": "https://uuys.cc/vodsearch/{wd}----------{pg}---.html",
-        "分类url": "https://uuys.cc/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
-        "分类": "电影$2#电视剧$1#综艺$4#动漫$3"
-      }
     },
     {
       "key": "360zy",
@@ -1608,6 +1629,169 @@
       "filterable": 1,
       "ext": "./lib/waiyu.json"
     },
+            {
+            "key": "B站影视",
+            "name": "B站影视┃PY",
+            "type": 3,
+            "api": "./py/py_1712024bilibilimd.py",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "动漫",
+            "name": "动漫┃PY",
+            "type": 3,
+            "api": "./py/py_动漫.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "央视库",
+            "name": "央视库┃PY",
+            "type": 3,
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./py/py_央库云.py"
+        },
+        {
+            "key": "T4直播转点播",
+            "name": "教育库┃PY",
+            "type": 4,
+            "api": "http://120.53.102.254/dsp16",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        
+        {
+            "key": "本地新然景",
+            "name": "然景┃PY",
+            "type": 3,
+            "api": "./py/py_央视然景.py",
+            "searchable": 1,
+            "playerType": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "两个BT",
+            "name": "两个BT┃PY",
+            "type": 3,
+            "api": "./py/py_两个BT.py",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+               {
+            "key": "哔哩1",
+            "name": "哔哩①┃PY",
+            "type": 3,
+            "api": "./py/py_2772024bilibilivd.py",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "json": "./json/1712024bilibili.json"
+            }
+        },
+        {
+            "key": "哔哩2",
+            "name": "哔哩②┃PY",
+            "type": 3,
+            "api": "./py/py_1712024bilibilivd.py",
+            "searchable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "json": "./json/1712024bilibili.json"
+            }
+        },
+        
+
+             {
+            "key": "py_bilibili",
+            "name": "哔哩┃PY",
+            "type": 3,
+            "api": "./py/py_bilibili.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+                {
+            "key": "py_hitv",
+            "name": "Hitv┃PY",
+            "type": 3,
+            "api": "./py/py_hitv.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+                
+                
+
+                {
+            "key": "py_可可",
+            "name": "可可┃PY",
+            "type": 3,
+            "api": "./py/py_可可.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+                {
+            "key": "奈飞影视",
+            "name": "奈飞┃PY",
+            "type": 3,
+            "api": "./py/奈飞影视.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        
+                {
+            "key": "首映网",
+            "name": "首映网┃PY",
+            "type": 3,
+            "api": "./py/首映网.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        
+        
+       
+                       {
+            "key": "py_五五短剧",
+            "name": "五五短剧┃PY",
+            "type": 3,
+            "api": "./py/五五短剧.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        {
+            "key": "黑料18+",
+            "name": "黑料18┃PY",
+            "type": 3,
+            "api": "./py/py_黑料.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        
+    
+    
     {
       "key": "ext_live_protocol",
       "name": "公众号：天微科技",
